@@ -32,6 +32,7 @@ img {
   --textcolor: hsl(0 0% 66%);
   --textcolorlight: hsl(0 0% 21%);
   --backcolor: hsla(0, 0%, 21%, 1);
+  --backcolordark: hsla(0, 0%, 17%, 1);
 
   --color1: ;
   --color2: ;
@@ -44,6 +45,7 @@ img {
   --title-font-size: 1.875rem;
   --subtitle-font-size: 1rem;
 
+  --logo-font: 'Kalam', sans-serif;
   --title-font: 'Poppins', sans-serif;
   --body-font: 'DM Sans', sans-serif;
 }
@@ -117,7 +119,7 @@ body {
 }
 
 .section#home {
-  padding: calc(5rem + var(--headerheight)) 0;
+  padding: calc(6rem + var(--headerheight)) 0;
   padding-bottom: var(--headerheight);
 }
 
@@ -129,6 +131,8 @@ body {
   font-size: var(--subtitle-font-size);
 }
 
+/* HEADER */
+
 .section header {
   margin-bottom: 4rem;
 }
@@ -138,23 +142,24 @@ body {
 }
 
 #header {
-  border-bottom: 0.0625rem solid #e4e4e4;
+  border-bottom: 0.1rem solid hsl(0, 0%, 21%);
   margin-bottom: 2rem;
   display: flex;
   width: 100%;
   position: fixed;
   z-index: 100;
-  background-color: var(--backcolor);
+  background-color: var(--backcolordark);
 }
 
 /* LOGO */
+
 .logo {
-  font: 700 1.31rem 'Poppins', sans-serif;
+  font: 700 var(--title-font-size) var(--logo-font);
   color: var(--titlecolor);
 }
 
 .logo span {
-  font: 700 1.31rem 'Poppins', sans-serif;
+  font: 700 var(--title-font-size) var(--logo-font);
   color: var(--basecolor);
 }
 .logo-alt span {
@@ -163,7 +168,7 @@ body {
 
 #header .icon-headphones {
   color: var(--titlecolor);
-  font-size: 1.3rem;
+  font-size: 2rem;
   padding-left: 0.1rem;
 }
 
