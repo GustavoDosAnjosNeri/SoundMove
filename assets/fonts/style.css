@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?8gcg2b');
-  src:  url('fonts/icomoon.eot?8gcg2b#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?8gcg2b') format('truetype'),
-    url('fonts/icomoon.woff?8gcg2b') format('woff'),
-    url('fonts/icomoon.svg?8gcg2b#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?hp3vch');
+  src:  url('fonts/icomoon.eot?hp3vch#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?hp3vch') format('truetype'),
+    url('fonts/icomoon.woff?hp3vch') format('woff'),
+    url('fonts/icomoon.svg?hp3vch#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -28,13 +28,13 @@
 .icon-mic:before {
   content: "\e902";
 }
-.icon-music-artist:before {
-  content: "\e908";
-}
 .icon-soundcloud:before {
   content: "\e90a";
 }
-.icon-music:before {
+.icon-headphones:before {
+  content: "\e908";
+}
+.icon-musicnote:before {
   content: "\e90d";
 }
 .icon-speaker:before {

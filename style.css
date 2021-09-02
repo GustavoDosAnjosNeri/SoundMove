@@ -161,9 +161,10 @@ body {
   color: var(--textcolorlight);
 }
 
-#header .icon-woman-hair {
-  color: var(--basecolor);
+#header .icon-headphones {
+  color: var(--titlecolor);
   font-size: 1.3rem;
+  padding-left: 0.1rem;
 }
 
 /* NAVIGATION */
