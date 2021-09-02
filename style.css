@@ -22,16 +22,16 @@ img {
   --headerheight: 4.5rem;
 
   /* Cors */
-  --hue: 15;
+  --hue: 55;
 
   /* Atalhos de cores */
-  --basecolor: hsl(var(--hue) 80% 57%);
+  --basecolor: hsl(var(--hue) 80% 50%);
   --secondcolor: hsl(var(--hue) 100% 75%);
   --basecoloralt: hsl(var(--hue) 57% 53%);
-  --titlecolor: hsl(var(--hue) 41% 10%);
-  --textcolor: hsl(0 0% 46%);
-  --textcolorlight: hsl(0 0% 85%);
-  --backcolor: hsl(0 0% 98%);
+  --titlecolor: hsl(var(--hue) 0% 90%);
+  --textcolor: hsl(0 0% 66%);
+  --textcolorlight: hsl(0 0% 21%);
+  --backcolor: hsla(0, 0%, 21%, 1);
 
   --color1: ;
   --color2: ;
@@ -113,7 +113,12 @@ body {
 }
 
 .section {
+  padding: var(--headerheight) 0;
+}
+
+.section#home {
   padding: calc(5rem + var(--headerheight)) 0;
+  padding-bottom: var(--headerheight);
 }
 
 .section .title {
@@ -511,6 +516,7 @@ footer.section {
 footer .logo {
   display: inline-block;
   margin-bottom: 1.5rem;
+  color: var(--backcolor);
 }
 
 footer .brand .text {
@@ -582,8 +588,12 @@ footer .social a:hover {
     margin-right: auto;
   }
 
-  .section {
+  .section#header {
     padding: 10rem 0rem;
+  }
+
+  .section {
+    padding: 3rem 0rem;
   }
 
   .section header,
@@ -648,15 +658,15 @@ footer .social a:hover {
     width: 100%;
     background-color: var(--secondcolor);
     position: absolute;
-    top: -2rem;
-    left: 4rem;
+    top: -1.3rem;
+    left: -1.5rem;
     z-index: 0;
   }
 
   #home .image img {
     position: relative;
     right: 2.93rem;
-    left: 1rem;
+    left: -4rem;
     width: 100%;
     top: 1rem;
   }
@@ -678,7 +688,7 @@ footer .social a:hover {
     background-color: var(--secondcolor);
     position: absolute;
     top: 4rem;
-    left: -2rem;
+    left: -0.5rem;
     z-index: 0;
   }
 
@@ -686,7 +696,7 @@ footer .social a:hover {
     position: relative;
     top: 6rem;
     right: 2.93rem;
-    left: 0.5rem;
+    left: 1.5rem;
     width: 94%;
     height: 60%;
   }
@@ -695,7 +705,7 @@ footer .social a:hover {
 
   .cards,
   .card {
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .card {
@@ -732,6 +742,35 @@ footer .social a:hover {
     justify-content: space-between;
     grid-auto-flow: column;
   }
+
+  .back-to-top {
+    color: var(--textcolorlight);
+    background-color: white;
+
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+
+    padding: 0.7rem;
+    clip-path: circle();
+
+    line-height: 0;
+    font-size: 1.4rem;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s;
+    transform: translateY(150%);
+  }
+
+  .back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    background-color: white;
+
+    transform: translateY(0%);
+  }
 }
 
 /* LARGE DEVICES: 1023> */
@@ -747,5 +786,5 @@ footer .social a:hover {
 }
 
 /* MEDIU DEVICES: 767>*/
-@media (min-width: 676px) {
+@media (min-width: 766px) {
 }
