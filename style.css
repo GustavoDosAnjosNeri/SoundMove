@@ -300,7 +300,7 @@ nav.show .icon-close {
 #home .image::before {
   content: '';
   height: 100%;
-  width: 90%;
+  width: 88.9%;
   background-color: var(--secondcolor);
   position: absolute;
   top: -10%;
@@ -356,15 +356,15 @@ nav.show .icon-close {
   background-color: var(--secondcolor);
   position: absolute;
   top: -1.5rem;
-  left: 2.5rem;
+  left: 1.5rem;
   z-index: 0;
 }
 
 #about .image img {
   position: relative;
   right: 2.93rem;
-  left: 5rem;
-  top: 1rem;
+  left: 3rem;
+  top: 0.5rem;
   width: 87%;
 }
 
