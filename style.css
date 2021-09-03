@@ -17,6 +17,10 @@ img {
   height: auto;
 }
 
+@font-face {
+  font-family: 'kickrush';
+  src: url(assets/fonts/fonts/kickrushdemo.ttf);
+}
 /* VARIABLES */
 :root {
   --headerheight: 4.5rem;
@@ -42,10 +46,11 @@ img {
   --color6: ;
 
   /* fonts */
+
   --title-font-size: 1.875rem;
   --subtitle-font-size: 1rem;
 
-  --logo-font: 'Kalam', sans-serif;
+  --logo-font: 'kalam', sans-serif;
   --title-font: 'Poppins', sans-serif;
   --body-font: 'DM Sans', sans-serif;
 }
@@ -154,22 +159,26 @@ body {
 /* LOGO */
 
 .logo {
-  font: 700 var(--title-font-size) var(--logo-font);
+  font-family: 'kickrush';
+  font-size: 2rem;
   color: var(--titlecolor);
 }
 
 .logo span {
-  font: 700 var(--title-font-size) var(--logo-font);
+  font-family: 'kickrush';
+  font-size: 2rem;
   color: var(--basecolor);
 }
 .logo-alt span {
   color: var(--textcolorlight);
 }
 
-#header .icon-headphones {
-  color: var(--titlecolor);
-  font-size: 2rem;
-  padding-left: 0.1rem;
+.logoimg {
+  height: 2.5rem;
+  width: 2.5rem;
+  position: relative;
+  right: 0.4rem;
+  top: 0.43rem;
 }
 
 /* NAVIGATION */
