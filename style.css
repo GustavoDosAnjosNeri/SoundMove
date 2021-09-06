@@ -303,15 +303,14 @@ nav.show .icon-close {
   width: 88.9%;
   background-color: var(--secondcolor);
   position: absolute;
-  top: -10%;
-  left: 8%;
+  top: -8%;
+  left: 3%;
   z-index: 0;
 }
 
 #home .image img {
   position: relative;
-  right: 2.93rem;
-  left: 2rem;
+  left: 6%;
   width: 90%;
 }
 
@@ -341,6 +340,10 @@ nav.show .icon-close {
   background-color: var(--backcolor);
 }
 
+#about strong {
+  color: var(--basecolor);
+}
+
 #about .container {
   margin: 0;
 }
@@ -352,20 +355,18 @@ nav.show .icon-close {
 #about .image::before {
   content: '';
   height: 100%;
-  width: 87%;
+  width: 86.9%;
   background-color: var(--secondcolor);
   position: absolute;
-  top: -1.5rem;
-  left: 1.5rem;
+  top: -10%;
+  left: 9%;
   z-index: 0;
 }
 
 #about .image img {
   position: relative;
-  right: 2.93rem;
-  left: 3rem;
-  top: 0.5rem;
   width: 87%;
+  left: 1rem;
 }
 
 #about .image img,
